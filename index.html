@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Checagem - Pizza Anapolis</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <img src="\imagens\logo.png"> </img>
+    <section>
+    <div class="main">
+        
+
+            <input type="datetime-local" class="data"><br>
+            <br>
+            <input type="text" class="text1" placeholder="Insira seu nome!" name="text" autocomplete="off"><br>
+            <form action="" method="post">
+            <br><label><br>
+            <button type="button" class="text"  name="text" > <input type="checkbox" id="check" onclick="habilitar()"/></label> <br>
+            <br><label>ABRIR O CAIXA<br>
+            <button type="button" class="text"  name="text" > <input type="checkbox" onclick="habilitar(this.checked)"/></label> <br>
+            <br><label>ABRIR O IFOOD<br>
+            <button type="button" class="text"  name="text" > <input type="checkbox" onclick="habilitar(this.checked)"/></label> <br>
+            <br><label>ABRIR O SITE<br>
+            <button type="button" class="text"  name="text" > <input type="checkbox" onclick="habilitar(this.checked)"/></label> <br>
+            <br><label>  <br>
+            <button type="button" class="text"  name="text" > <input type="checkbox" onclick="habilitar(this.checked)"/></label> <br>
+            <br><label>  <br>
+            <button type="button" class="text"  name="text" > <input type="checkbox" onclick="habilitar(this.checked)"/></label> <br>
+            <br>
+            
+            <button type="" name="" value="" onclick="confirmBox()">Enviar</button>
+        </form>
+    </section>        
+    </div>
+
+
+
+
+</body>
+    
+<script src="script.js"></script></script>
+<script type="text/javascript">
+    function habilitar(selecionado) {
+      document.getElementById('text').disabled = selecionado;
+    }
+  </script>
+</html>
